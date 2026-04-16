@@ -50,8 +50,23 @@ function createGrid(size){
                     intensitymap.set(cell, val);
                     cell.style.backgroundColor= `rgba(0,0,0,${val})`;
                 }
-            })
+                else if(currentMode ==="shading"){
+                    let val = intensitymap.get(cell) || 1;
+                    val = Math.max(val + 0.1, 0);
+                    intensitymap.set(cell, val);
+                    cell.style.backgroundColor = `rgba(0,0,0, ${val})`;
+                }
+            });
+
+            row.appendChild(cell);
         }
+
+        grid.appendChild(row);
     }
 
 }
+
+setgrid.addEventListener("click", (e)=>{
+    createGrid(slider.value);
+});
+
