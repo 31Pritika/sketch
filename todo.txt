@@ -1,0 +1,5 @@
+so firstly
+make a front end page where person can adjust the size of the grid
+1. MAKE A FORM THEN
+    IN THIS FORM INCLUDE COLUMN NUMBER AND COLOR OPTIONS, BLACK AND WHITE, RGB, ERASE and CLEAR
+

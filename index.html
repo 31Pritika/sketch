@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch and Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="controls">
+            <div class="form-group">
+            <input type="range" id="gridsizerange" min="5" max="60" value="16">
+            <span id="gridsize">16 x 16</span><br><br>
+            <button type = "button" id="setgrid">Set Grid</button>
+        </div>
+
+            <div class="stylebuttons">
+                <br><br>
+                <button data-value="black" id="black">Black</button>                
+                <button data-value="rainbow" id="rainbow">Rainbow</button>
+                <button data-value="shading" id="shading">Shading</button>
+                <button data-value="lighten" id="lighten">Lighten</button><br>
+                <button data-value="erase" id="erase">Erase</button>
+                <button data-value="clear" id="clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="grid" id="grid">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

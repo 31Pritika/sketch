@@ -1,0 +1,105 @@
+body{
+    background-image: url("bgg.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: white;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start; 
+    margin: 50px;
+    margin-top: 100px;
+}
+
+button{
+    background: linear-gradient(135deg, #f9d5e5, #fbead1);
+    color: #4a3f3f;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #f7b6d2, #f2dcc0);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+button:active{
+    transform: scale(0.97);
+}
+
+.stylebuttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button[data-value="black"]{
+    background: #f2e9e4;
+}
+
+button[data-value="rainbow"]{
+    background: linear-gradient(135deg, #f8c8dc, #f5e6cc);
+}
+
+button[data-value="erase"]{
+    background: #e7d8c9;
+}
+
+button[data-value="clear"]{
+    background: #f4acb7;
+}
+
+input[type="range"]{
+    width: 200px;
+    height: 10px;
+    background-color: #fffaf5;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+form input:focus{
+    border-color: #f4acb7;
+    box-shadow: 0 0 5px rgba(244, 172, 183, 0.5);
+}
+
+form input::placeholder{
+    color: #b8a89a;
+}
+
+ .grid{
+    background-color: white;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 6px;
+    width: 600px;
+    height:600px;
+    position:absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+    border: 1px solid black;
+}
